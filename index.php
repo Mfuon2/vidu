@@ -7,12 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Reales WP | Real Estate WordPress Theme</title>
-    <link rel="pingback" href="lib/xmlrpc.php">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>Gift Properties Co.</title>
+
     <link rel="shortcut icon" href="lib/wp-content/themes/reales/images/favicon.png" type="image/x-icon"/>
     <meta name="google-signin-clientid"
           content="661558541389-4rkd1mee6bu16ubfdkp4p3m25584ksor.apps.googleusercontent.com"/>
@@ -80,19 +76,25 @@
             vertical-align: -0.1em !important;
             background: none !important;
             padding: 0 !important;
-        },
+        }
+
+        ,
         #uploadModal {
             min-width: 600px;
         }
+
         .upload-file .start {
             display: none;
         }
+
         .modal-footer, .modal-header {
             padding: 10px;
         }
+
         .modal-header .close {
             margin-top: 3px;
         }
+
         ol.upload-files-list {
             /*border: 1px solid #b9b9b9;*/
             margin: 0;
@@ -101,21 +103,27 @@
             border-right: none;
             overflow: hidden;
         }
+
         ol.upload-files-list .upload-file:last-child {
             border-bottom: 1px solid #ddd;
         }
+
         ol.upload-files-list .upload-file.template-download .error-col {
             float: right;
-            ``}
+            ` `
+        }
+
         ol.upload-files-list .upload-file.template-upload .error-col {
             float: left;
         }
-        ol.upload-files-list .upload-file.template-upload .filesize-col{
+
+        ol.upload-files-list .upload-file.template-upload .filesize-col {
             float: left;
             padding-right: 5px;
             padding-left: 5px;
             width: 80px;
         }
+
         ol.upload-files-list .upload-file {
             list-style: none;
             position: relative;
@@ -127,6 +135,7 @@
             border-right: 1px solid #ddd;
             vertical-align: bottom;
         }
+
         ol.upload-files-list .upload-file .upload-file-info {
             vertical-align: baseline;
             border-collapse: collapse;
@@ -137,21 +146,26 @@
             left: 10px;
             right: 10px;
         }
+
         ol.upload-files-list .upload-file .upload-progress-bar {
             height: 33px;
             padding: 0;
             margin: 0;
         }
+
         .upload-file.complete .upload-progress-bar {
             background-color: #ebffd9;
         }
+
         .upload-file.error .upload-progress-bar {
             background-color: #FD9F9F;
         }
+
         .upload-file .upload-progress-bar {
             border-radius: 0;
             background-color: #e9f4ff;
         }
+
         .upload-files-list .upload-file .upload-file-info .filename-col {
             float: left;
             width: 310px;
@@ -159,22 +173,28 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+
         .upload-files-list .upload-file .upload-file-info div {
             display: block;
         }
+
         .upload-files-list .upload-file .upload-file-info .status-col {
             float: right;
 
         }
+
         .upload-files-list .upload-file .upload-file-info .actions-col {
             float: right;
         }
+
         .field-validation-error {
             color: red;
         }
+
         .fileupload-buttonbar {
             padding: 10px;
         }
+
         #openUpload {
             position: absolute;
             top: 50%;
@@ -184,22 +204,28 @@
             margin-top: -25px;
             height: 50px;
         }
+
         .modal-content {
             -webkit-box-shadow: none;
             box-shadow: none;
         }
+
         .modal-body {
             padding: 0;
         }
+
         .modal-content, .btn {
-            border-radius:0;
+            border-radius: 0;
         }
+
         .modal-backdrop {
             background-color: #fff;
         }
+
         .modal-footer {
             margin-top: 0 !important;
         }
+
         .modal-vertical-centered {
             transform: translate(0, 50%) !important;
             -ms-transform: translate(0, 50%) !important;
@@ -207,8 +233,9 @@
             -webkit-transform: translate(0, 50%) !important;
             /* Safari and Chrome */
         }
+
         #upload {
-            font-family:'PT Sans Narrow', sans-serif;
+            font-family: 'PT Sans Narrow', sans-serif;
             /*background-color: #373a3d;
                     background-image: -webkit-linear-gradient(top, #373a3d, #313437);
                     background-image: -moz-linear-gradient(top, #373a3d, #313437);
@@ -220,6 +247,7 @@
             /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
             */
         }
+
         #drop {
             /*background-color: #2E3134;*/
             padding: 10px 10px 0px 10px;
@@ -232,6 +260,7 @@
             font-weight: bold;
             color: #7f858a;
         }
+
         #drop a {
             background-color: #007a96;
             padding: 12px 26px;
@@ -243,11 +272,13 @@
             /*margin-top: 12px;*/
             line-height: 1;
         }
+
         #drop a:hover {
             background-color: #0986a3;
         }
+
         #drop input {
-            display:none;
+            display: none;
         }
     </style>
     <link rel='stylesheet' id='dsidx-css' href='http://api-idx.diversesolutions.com/combo-css?config=dsidxpress'
@@ -257,7 +288,8 @@
     <link rel='stylesheet' id='dsidxpress-unconditional-css'
           href='lib/wp-content/plugins/dsidxpress/css/client3172.css?ver=4.5.10' type='text/css' media='all'/>
     <link rel='stylesheet' id='dsidxwidgets-unconditional-css'
-          href='lib/wp-content/plugins/dsidxpress/dsidxwidgets/css/client3172.css?ver=4.5.10' type='text/css' media='all'/>
+          href='lib/wp-content/plugins/dsidxpress/dsidxwidgets/css/client3172.css?ver=4.5.10' type='text/css'
+          media='all'/>
     <link rel='stylesheet' id='reales_plugin_style-css'
           href='lib/wp-content/plugins/short-tax-post/css/style5152.css?ver=1.0' type='text/css' media='all'/>
     <link rel='stylesheet' id='datepicker_style-css'
@@ -281,44 +313,15 @@
           type='text/css' media='all'/>
     <link rel='stylesheet' id='fancybox_buttons-css'
           href='lib/wp-content/themes/reales/css/jquery.fancybox-buttons5152.css?ver=1.0' type='text/css' media='all'/>
-    <link rel='stylesheet' id='reales_style-css' href='lib/wp-content/themes/reales/style5152.css?ver=1.0' type='text/css'
+    <link rel='stylesheet' id='reales_style-css' href='lib/wp-content/themes/reales/style5152.css?ver=1.0'
+          type='text/css'
           media='all'/>
-    <link rel='stylesheet' id='idx_style-css' href='lib/wp-content/themes/reales/css/idx5152.css?ver=1.0' type='text/css'
+    <link rel='stylesheet' id='idx_style-css' href='lib/wp-content/themes/reales/css/idx5152.css?ver=1.0'
+          type='text/css'
           media='all'/>
-    <script type='text/javascript' src='lib/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
-    <script type='text/javascript' src='lib/wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
-    <script type='text/javascript'
-            src='http://api-idx.diversesolutions.com/combo-js?config=dsidxpress&amp;ver=2.1.32'></script>
-    <script type='text/javascript' src='lib/wp-includes/js/plupload/plupload.full.mincc91.js?ver=2.1.8'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var pluploadL10n = {
-            "queue_limit_exceeded": "You have attempted to queue too many files.",
-            "file_exceeds_size_limit": "%s exceeds the maximum upload size for this site.",
-            "zero_byte_file": "This file is empty. Please try another.",
-            "invalid_filetype": "This file type is not allowed. Please try another.",
-            "not_an_image": "This file is not an image. Please try another.",
-            "image_memory_exceeded": "Memory exceeded. Please try another smaller file.",
-            "image_dimensions_exceeded": "This is larger than the maximum size. Please try another.",
-            "default_error": "An error occurred in the upload. Please try again later.",
-            "missing_upload_url": "There was a configuration error. Please contact the server administrator.",
-            "upload_limit_exceeded": "You may only upload 1 file.",
-            "http_error": "HTTP error.",
-            "upload_failed": "Upload failed.",
-            "big_upload_failed": "Please try uploading this file with the %1$sbrowser uploader%2$s.",
-            "big_upload_queued": "%s exceeds the maximum upload size for the multi-file uploader when used in your browser.",
-            "io_error": "IO error.",
-            "security_error": "Security error.",
-            "file_cancelled": "File canceled.",
-            "upload_stopped": "Upload stopped.",
-            "dismiss": "Dismiss",
-            "crunching": "Crunching\u2026",
-            "deleted": "moved to the trash.",
-            "error_uploading": "\u201c%s\u201d has failed to upload."
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='lib/wp-includes/js/plupload/handlers.min3172.js?ver=4.5.10'></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel='https://api.w.org/' href='lib/wp-json/index.html'/>
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="lib/wp-includes/wlwmanifest.xml"/>
     <meta name="generator" content="WordPress 4.5.10"/>
@@ -783,22 +786,6 @@
             margin-top: 0px !important;
         }
     </style>
-    <script type="text/javascript">
-        if (typeof localdsidx == "undefined" || !localdsidx) {
-            var localdsidx = {};
-        }
-        ;
-        localdsidx.pluginUrl = "wp-content/plugins/dsidxpress/index.html";
-        localdsidx.homeUrl = "http://mariusn.com/themes/reales-wp";
-    </script>
-    <script type="text/javascript">
-        if (typeof localdsidx == "undefined" || !localdsidx) {
-            var localdsidx = {};
-        }
-        ;
-        localdsidx.pluginUrl = "wp-content/plugins/dsidxpress/index.html";
-        localdsidx.homeUrl = "http://mariusn.com/themes/reales-wp";
-    </script>
 </head>
 
 
@@ -858,6 +845,7 @@
                                     fjs.parentNode.insertBefore(js, fjs);
                                 }(document, 'script', 'facebook-jssdk'));
                             </script>
+
                             <div class="form-group">
                                 <div class="btn-group-justified">
                                     <a href="#" class="btn btn-lg btn-facebook" id="fbLoginBtn"><span
@@ -1084,7 +1072,7 @@
 
                             <li id="menu-item-555"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-555">
-                              <a href="#newProperty">Upload Property</a>
+                                <a href="#newProperty">Upload Property</a>
                             </li>
 
                             <li id="menu-item-557"
@@ -1253,34 +1241,112 @@
 
                 <div class="row pb40">
 
-                    <div class="container  col-sm-10">
+                    <div class="container  col-sm-12">
                         <h2>Property Details</h2>
+
+                        <?php
+                        if (isset($_POST['submit'])) {
+                            if (count($_FILES['upload']['name']) > 0) {
+                                //Loop through each file
+                                for ($i = 0; $i < count($_FILES['upload']['name']); $i++) {
+                                    //Get the temp file path
+                                    $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
+
+                                    //Make sure we have a filepath
+                                    if ($tmpFilePath != "") {
+
+                                        //save the filename
+                                        $property = "YEYEYE";
+                                        $shortname = $_FILES['upload']['name'][$i];
+
+                                        if (!file_exists("uploaded/" . $property)) {
+                                            mkdir("uploaded/" . $property, 0775, true);
+                                        }
+
+                                        //save the url and the file
+                                        $filePath = "uploaded/" . $property . "/" . $_FILES['upload']['name'][$i];
+                                        $path = "uploaded/" . $property . "/";
+//
+                                        //Upload the file into the temp dir
+                                        try {
+                                            if (move_uploaded_file($tmpFilePath, $filePath)) {
+
+                                                $files[] = $shortname;
+                                                //insert into db
+                                                //use $shortname for the filename
+                                                //use $filePath for the relative url to the file
+                                            }
+                                        } catch (Exception $e) {
+                                            echo " ==== " . $e;
+                                        }
+
+                                    }
+                                }
+                            }
+
+//show success message
+                            if (is_array($files)) {
+
+                                $i = 0;
+                                echo '<div class="img-thumbnail" style=\"  width: 12%; height: 120px\">';
+                                foreach ($files as $file) {
+                                    $getPath = null;
+                                    if($i < count($_FILES['upload']['name'])){
+                                        $getPath = $path . $_FILES['upload']['name'][$i];
+
+                                        echo '<img src="' . $getPath . '" class="img-thumbnail" alt="Cinque Terre" style="margin-left: 5px;margin-right: 5px;margin-top: 7px; width: 12%; height: 120px">';
+
+                                    }
+                                    $i++;
+
+
+                                }
+                                echo '</div>';
+
+                            }
+                        }
+                        ?>
+
+                        <form action="" enctype="multipart/form-data" method="post">
+
+                            <div>
+                                <input id='upload' name="upload[]" type="file" multiple="multiple"/>
+                            </div>
+
+                            <p><input class="btn-file" type="submit" name="submit" value="Upload"></p>
+
+                        </form>
                         <form class="form-horizontal" action="/action_page.php">
 
                             <div class="col-sm-6">
 
+
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" >Name :</label>
+                                    <label class="control-label col-sm-2">Name :</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="propertyName" placeholder="Property Name" name="propertyName">
+                                        <input type="text" class="form-control" id="propertyName"
+                                               placeholder="Property Name" name="propertyName">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" for="email">Email:</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                               name="email">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" for="email">Email:</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                               name="email">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" for="email">Email:</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                               name="email">
                                     </div>
                                 </div>
 
@@ -1290,10 +1356,11 @@
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" for="pwd">Password:</label>
                                     <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                        <input type="password" class="form-control" id="pwd"
+                                               placeholder="Enter password" name="pwd">
                                     </div>
                                 </div>
- n
+                                n
                                 <div class="form-group">
                                     <div class="col-sm-offset-6 col-sm-10">
                                         <button type="submit" class="btn btn-default">Submit</button>
@@ -1308,368 +1375,368 @@
             </div>
         </div>
         <div id="post-2" class="post-2 page type-page status-publish hentry">
-                <h2 class="osLight centered">Our Services</h2>
-                <div class="row pb40">
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
-                                    class="icon-pointer s-icon"></span>
-                            <div class="s-content"><h2 class="centered s-main osLight">Find places anywhere in the
-                                    world</h2>
-                                <h3 class="s-sub osLight">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-                            </div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
-                                    class="icon-users s-icon"></span>
-                            <div class="s-content"><h2 class="centered s-main osLight">We have agents with
-                                    experience</h2>
-                                <h3 class="s-sub osLight">Nulla convallis egestas rhoncus consectetur adipiscing
-                                    elit</h3></div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
-                                    class="icon-home s-icon"></span>
-                            <div class="s-content"><h2 class="centered s-main osLight">Buy or rent beautiful
-                                    properties</h2>
-                                <h3 class="s-sub osLight">Donec facilisis fermentum sem, ac viverra ante luctus vel</h3>
-                            </div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
-                                    class="icon-cloud-upload s-icon"></span>
-                            <div class="s-content"><h2 class="centered s-main osLight">With agent account you can list
-                                    properties</h2>
-                                <h3 class="s-sub osLight">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-                            </div>
-                        </a></div>
-                </div>
-                <h2 class="centered osLight">Recently Listed Properties</h2>
-                <div class="row pb40">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/modern-residence/index.html"
-                                                                         class="propWidget-2">
-                            <div class="fig"><img src="wp-content/uploads/2014/12/bg-1-600x400.jpg"
-                                                  alt="Modern Residence" class="scale" data-scale="best-fill"
-                                                  data-align="center"><img
-                                        src="wp-content/uploads/2014/12/bg-1-600x400.jpg" alt="Modern Residence"
-                                        class="blur scale" data-scale="best-fill" data-align="center">
-                                <div class="opac"></div>
-                                <div class="priceCap osLight"><span>$1,200,000<small
-                                                style="font-size:14px;"></small></span></div>
-                                <div class="figType">For Sale</div>
-                                <h3 class="osLight">Modern Residence</h3>
-                                <div class="address">547 35th Ave, San Francisco, United States</div>
-                            </div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a
-                                href="properties/sophisticated-residence/index.html" class="propWidget-2">
-                            <div class="fig">
-                                <div class="featured-label">
-                                    <div class="featured-label-left"></div>
-                                    <div class="featured-label-content"><span class="fa fa-star"></div>
-                                    <div class="featured-label-right"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <img src="wp-content/uploads/2015/02/img-prop-600x400.jpg" alt="Sophisticated Residence"
-                                     class="scale" data-scale="best-fill" data-align="center"><img
-                                        src="wp-content/uploads/2015/02/img-prop-600x400.jpg"
-                                        alt="Sophisticated Residence" class="blur scale" data-scale="best-fill"
-                                        data-align="center">
-                                <div class="opac"></div>
-                                <div class="priceCap osLight"><span>$799,000<small
-                                                style="font-size:14px;"></small></span></div>
-                                <div class="figType">For Sale</div>
-                                <h3 class="osLight">Sophisticated Residence</h3>
-                                <div class="address">600 40th Ave, San Francisco, United States</div>
-                            </div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/luxury-mansion/index.html"
-                                                                         class="propWidget-2">
-                            <div class="fig">
-                                <div class="featured-label">
-                                    <div class="featured-label-left"></div>
-                                    <div class="featured-label-content"><span class="fa fa-star"></div>
-                                    <div class="featured-label-right"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <img src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
-                                     class="scale" data-scale="best-fill" data-align="center"><img
-                                        src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
-                                        class="blur scale" data-scale="best-fill" data-align="center">
-                                <div class="opac"></div>
-                                <div class="priceCap osLight"><span>$3,400<small
-                                                style="font-size:14px;">/mo</small></span></div>
-                                <div class="figType">For Rent</div>
-                                <h3 class="osLight">Luxury Mansion</h3>
-                                <div class="address">10 Romain St, San Francisco, Romania</div>
-                            </div>
-                        </a></div>
-                </div>
-                <h2 class="centered osLight">Featured Properties</h2>
-                <div class="row pb40">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a
-                                href="properties/sophisticated-residence/index.html" class="propWidget-2">
-                            <div class="fig">
-                                <div class="featured-label">
-                                    <div class="featured-label-left"></div>
-                                    <div class="featured-label-content"><span class="fa fa-star"></div>
-                                    <div class="featured-label-right"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <img src="wp-content/uploads/2015/02/img-prop-600x400.jpg" alt="Sophisticated Residence"
-                                     class="scale" data-scale="best-fill" data-align="center"><img
-                                        src="wp-content/uploads/2015/02/img-prop-600x400.jpg"
-                                        alt="Sophisticated Residence" class="blur scale" data-scale="best-fill"
-                                        data-align="center">
-                                <div class="opac"></div>
-                                <div class="priceCap osLight"><span>$799,000<small
-                                                style="font-size:14px;"></small></span></div>
-                                <div class="figType">For Sale</div>
-                                <h3 class="osLight">Sophisticated Residence</h3>
-                                <div class="address">600 40th Ave, San Francisco, United States</div>
-                            </div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/luxury-mansion/index.html"
-                                                                         class="propWidget-2">
-                            <div class="fig">
-                                <div class="featured-label">
-                                    <div class="featured-label-left"></div>
-                                    <div class="featured-label-content"><span class="fa fa-star"></div>
-                                    <div class="featured-label-right"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <img src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
-                                     class="scale" data-scale="best-fill" data-align="center"><img
-                                        src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
-                                        class="blur scale" data-scale="best-fill" data-align="center">
-                                <div class="opac"></div>
-                                <div class="priceCap osLight"><span>$3,400<small
-                                                style="font-size:14px;">/mo</small></span></div>
-                                <div class="figType">For Rent</div>
-                                <h3 class="osLight">Luxury Mansion</h3>
-                                <div class="address">10 Romain St, San Francisco, Romania</div>
-                            </div>
-                        </a></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/elegant-apartment/index.html"
-                                                                         class="propWidget-2">
-                            <div class="fig">
-                                <div class="featured-label">
-                                    <div class="featured-label-left"></div>
-                                    <div class="featured-label-content"><span class="fa fa-star"></div>
-                                    <div class="featured-label-right"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <img src="wp-content/uploads/2014/12/bg-4-600x400.jpg" alt="Elegant Apartment"
-                                     class="scale" data-scale="best-fill" data-align="center"><img
-                                        src="wp-content/uploads/2014/12/bg-4-600x400.jpg" alt="Elegant Apartment"
-                                        class="blur scale" data-scale="best-fill" data-align="center">
-                                <div class="opac"></div>
-                                <div class="priceCap osLight"><span>$895,000<small
-                                                style="font-size:14px;"></small></span></div>
-                                <div class="figType">For Sale</div>
-                                <h3 class="osLight">Elegant Apartment</h3>
-                                <div class="address">1485 Guerrero St, San Francisco, United States</div>
-                            </div>
-                        </a></div>
-                </div>
-                <h2 class="centered osLight">Hot Offer Today</h2>
-                <div class="pb40">
-                    <div class="singlePropertyShort">
-                        <div class="spsImage right"><img src="wp-content/uploads/2014/12/bg-4.jpg"
-                                                         alt="Elegant Apartment" class="scale" data-scale="best-fill"
-                                                         data-align="center">
-                            <div class="spsPrice">
-                                <div class="osLight"><span>$895,000<small style="font-size:14px;"></small></span></div>
-                            </div>
-                            <div class="spsType">For Sale</div>
+            <h2 class="osLight centered">Our Services</h2>
+            <div class="row pb40">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
+                                class="icon-pointer s-icon"></span>
+                        <div class="s-content"><h2 class="centered s-main osLight">Find places anywhere in the
+                                world</h2>
+                            <h3 class="s-sub osLight">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                         </div>
-                        <div class="spsContent right">
-                            <div class="spsCategory">Apartment</div>
-                            <h3 class="osLight spsTitle">Elegant Apartment</h3>
-                            <div class="spsAddress">1485 Guerrero St, Noe Valley, San Francisco, <br/>CA, 94110, United
-                                States
-                            </div>
-                            <a href="properties/elegant-apartment/index.html" class="btn btn-green btn-o">View
-                                Details</a>
-                            <ul class="spsFeatures">
-                                <li><span class="fa fa-moon-o"></span> 2 Bedrooms</li>
-                                <li><span class="icon-drop"></span> 1 Bathrooms</li>
-                                <li><span class="icon-frame"></span> 1200 sq ft</li>
-                            </ul>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
+                                class="icon-users s-icon"></span>
+                        <div class="s-content"><h2 class="centered s-main osLight">We have agents with
+                                experience</h2>
+                            <h3 class="s-sub osLight">Nulla convallis egestas rhoncus consectetur adipiscing
+                                elit</h3></div>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
+                                class="icon-home s-icon"></span>
+                        <div class="s-content"><h2 class="centered s-main osLight">Buy or rent beautiful
+                                properties</h2>
+                            <h3 class="s-sub osLight">Donec facilisis fermentum sem, ac viverra ante luctus vel</h3>
                         </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <h2 class="centered osLight">Membership Plans</h2>
-                <div class="row pb20">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="price-plan">
-                            <div class="price-plan-title">Personal</div>
-                            <div class="price-plan-price">
-                                <div class="price-plan-price-sum">9.99<sup> USD</sup></div>
-                                <div class="price-plan-price-period">/ 1 months</div>
-                            </div>
-                            <div class="price-plan-features"><span>10 Listings</span><span>2 Featured Listings</span>
-                            </div>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 s-menu-item"><a href="#"><span
+                                class="icon-cloud-upload s-icon"></span>
+                        <div class="s-content"><h2 class="centered s-main osLight">With agent account you can list
+                                properties</h2>
+                            <h3 class="s-sub osLight">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="price-plan">
-                            <div class="price-plan-title">Professional</div>
-                            <div class="price-plan-price">
-                                <div class="price-plan-price-sum">49.99<sup> USD</sup></div>
-                                <div class="price-plan-price-period">/ 6 months</div>
-                            </div>
-                            <div class="price-plan-features"><span>40 Listings</span><span>10 Featured Listings</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="price-plan">
-                            <div class="price-plan-title">Business</div>
-                            <div class="price-plan-price">
-                                <div class="price-plan-price-sum">99.99<sup> USD</sup></div>
-                                <div class="price-plan-price-period">/ 1 years</div>
-                            </div>
-                            <div class="price-plan-features">
-                                <span>Unlimited Listings</span><span>20 Featured Listings</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pb40">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <a href="#" data-toggle="modal"data-target="#signup"
-                           class="btn btn-green btn-block btn-lg">Get
-                            started now</a></div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
-                </div>
-                <h2 class="centered osLight">Our Agents</h2>
-                <div class="row pb40">
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <div class="agent"><a href="agents/antony-iglesias/index.html" class="agent-avatar"><img
-                                        src="wp-content/uploads/2014/12/avatar-4.png" alt="Antony Iglesias">
-                                <div class="ring"></div>
-                            </a>
-                            <div class="agent-name osLight">Antony Iglesias</div>
-                            <div class="reviewRating"><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star-o"></span></div>
-                            <div class="agent-contact"><a href="agents/antony-iglesias/index.html"
-                                                          class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
-                                            class="fa fa-link"></span></a> <a href="#"
-                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
-                                                                              target="_blank"><span
-                                            class="fa fa-facebook"></span></a> <a href="#"
-                                                                                  class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
-                                                                                  target="_blank"><span
-                                            class="fa fa-twitter"></span></a> <a href="#"
-                                                                                 class="btn btn-sm btn-icon btn-round btn-o btn-google"
-                                                                                 target="_blank"><span
-                                            class="fa fa-google-plus"></span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <div class="agent"><a href="agents/rust-cohle/index.html" class="agent-avatar"><img
-                                        src="wp-content/uploads/2014/12/avatar-6.png" alt="Rust Cohle">
-                                <div class="ring"></div>
-                            </a>
-                            <div class="agent-name osLight">Rust Cohle</div>
-                            <div class="reviewRating"><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star-o"></span></div>
-                            <div class="agent-contact"><a href="agents/rust-cohle/index.html"
-                                                          class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
-                                            class="fa fa-link"></span></a> <a href="#"
-                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
-                                                                              target="_blank"><span
-                                            class="fa fa-facebook"></span></a> <a href="#"
-                                                                                  class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
-                                                                                  target="_blank"><span
-                                            class="fa fa-twitter"></span></a> <a href="#"
-                                                                                 class="btn btn-sm btn-icon btn-round btn-o btn-google"
-                                                                                 target="_blank"><span
-                                            class="fa fa-google-plus"></span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <div class="agent"><a href="agents/jane-smith/index.html" class="agent-avatar"><img
-                                        src="wp-content/uploads/2014/12/avatar-2.png" alt="Jane Smith">
-                                <div class="ring"></div>
-                            </a>
-                            <div class="agent-name osLight">Jane Smith</div>
-                            <div class="reviewRating"><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star-o"></span></div>
-                            <div class="agent-contact"><a href="agents/jane-smith/index.html"
-                                                          class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
-                                            class="fa fa-link"></span></a> <a href="#"
-                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
-                                                                              target="_blank"><span
-                                            class="fa fa-facebook"></span></a> <a href="#"
-                                                                                  class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
-                                                                                  target="_blank"><span
-                                            class="fa fa-twitter"></span></a> <a href="#"
-                                                                                 class="btn btn-sm btn-icon btn-round btn-o btn-google"
-                                                                                 target="_blank"><span
-                                            class="fa fa-google-plus"></span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <div class="agent"><a href="agents/john-smith/index.html" class="agent-avatar"><img
-                                        src="wp-content/uploads/2014/12/avatar-1.png" alt="John Smith">
-                                <div class="ring"></div>
-                            </a>
-                            <div class="agent-name osLight">John Smith</div>
-                            <div class="reviewRating"><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                            <div class="agent-contact"><a href="agents/john-smith/index.html"
-                                                          class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
-                                            class="fa fa-link"></span></a> <a href="#"
-                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
-                                                                              target="_blank"><span
-                                            class="fa fa-facebook"></span></a> <a href="#"
-                                                                                  class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
-                                                                                  target="_blank"><span
-                                            class="fa fa-twitter"></span></a> <a href="#"
-                                                                                 class="btn btn-sm btn-icon btn-round btn-o btn-google"
-                                                                                 target="_blank"><span
-                                            class="fa fa-google-plus"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="centered osLight">Testimonials</h2>
-                <div class="row pb40">
-                    <div id="home-testimonials" class="carousel slide carousel-wb mb20" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#home-testimonials" data-slide-to="0" class="active"></li>
-                            <li data-target="#home-testimonials" data-slide-to="1"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active"><img src="wp-content/uploads/2014/12/avatar-2.png"
-                                                          class="home-testim-avatar" alt="Jane Smith">
-                                <div class="home-testim">
-                                    <div class="home-testim-text">There are many variations of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words
-                                    </div>
-                                    <div class="home-testim-name">Jane Smith</div>
-                                </div>
-                            </div>
-                            <div class="item"><img src="wp-content/uploads/2014/12/avatar-6.png"
-                                                   class="home-testim-avatar" alt="Rust Cohle">
-                                <div class="home-testim">
-                                    <div class="home-testim-text">There are many variations of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words
-                                    </div>
-                                    <div class="home-testim-name">Rust Cohle</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
+                    </a></div>
             </div>
+            <h2 class="centered osLight">Recently Listed Properties</h2>
+            <div class="row pb40">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/modern-residence/index.html"
+                                                                     class="propWidget-2">
+                        <div class="fig"><img src="wp-content/uploads/2014/12/bg-1-600x400.jpg"
+                                              alt="Modern Residence" class="scale" data-scale="best-fill"
+                                              data-align="center"><img
+                                    src="wp-content/uploads/2014/12/bg-1-600x400.jpg" alt="Modern Residence"
+                                    class="blur scale" data-scale="best-fill" data-align="center">
+                            <div class="opac"></div>
+                            <div class="priceCap osLight"><span>$1,200,000<small
+                                            style="font-size:14px;"></small></span></div>
+                            <div class="figType">For Sale</div>
+                            <h3 class="osLight">Modern Residence</h3>
+                            <div class="address">547 35th Ave, San Francisco, United States</div>
+                        </div>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a
+                            href="properties/sophisticated-residence/index.html" class="propWidget-2">
+                        <div class="fig">
+                            <div class="featured-label">
+                                <div class="featured-label-left"></div>
+                                <div class="featured-label-content"><span class="fa fa-star"></div>
+                                <div class="featured-label-right"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="wp-content/uploads/2015/02/img-prop-600x400.jpg" alt="Sophisticated Residence"
+                                 class="scale" data-scale="best-fill" data-align="center"><img
+                                    src="wp-content/uploads/2015/02/img-prop-600x400.jpg"
+                                    alt="Sophisticated Residence" class="blur scale" data-scale="best-fill"
+                                    data-align="center">
+                            <div class="opac"></div>
+                            <div class="priceCap osLight"><span>$799,000<small
+                                            style="font-size:14px;"></small></span></div>
+                            <div class="figType">For Sale</div>
+                            <h3 class="osLight">Sophisticated Residence</h3>
+                            <div class="address">600 40th Ave, San Francisco, United States</div>
+                        </div>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/luxury-mansion/index.html"
+                                                                     class="propWidget-2">
+                        <div class="fig">
+                            <div class="featured-label">
+                                <div class="featured-label-left"></div>
+                                <div class="featured-label-content"><span class="fa fa-star"></div>
+                                <div class="featured-label-right"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
+                                 class="scale" data-scale="best-fill" data-align="center"><img
+                                    src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
+                                    class="blur scale" data-scale="best-fill" data-align="center">
+                            <div class="opac"></div>
+                            <div class="priceCap osLight"><span>$3,400<small
+                                            style="font-size:14px;">/mo</small></span></div>
+                            <div class="figType">For Rent</div>
+                            <h3 class="osLight">Luxury Mansion</h3>
+                            <div class="address">10 Romain St, San Francisco, Romania</div>
+                        </div>
+                    </a></div>
+            </div>
+            <h2 class="centered osLight">Featured Properties</h2>
+            <div class="row pb40">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a
+                            href="properties/sophisticated-residence/index.html" class="propWidget-2">
+                        <div class="fig">
+                            <div class="featured-label">
+                                <div class="featured-label-left"></div>
+                                <div class="featured-label-content"><span class="fa fa-star"></div>
+                                <div class="featured-label-right"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="wp-content/uploads/2015/02/img-prop-600x400.jpg" alt="Sophisticated Residence"
+                                 class="scale" data-scale="best-fill" data-align="center"><img
+                                    src="wp-content/uploads/2015/02/img-prop-600x400.jpg"
+                                    alt="Sophisticated Residence" class="blur scale" data-scale="best-fill"
+                                    data-align="center">
+                            <div class="opac"></div>
+                            <div class="priceCap osLight"><span>$799,000<small
+                                            style="font-size:14px;"></small></span></div>
+                            <div class="figType">For Sale</div>
+                            <h3 class="osLight">Sophisticated Residence</h3>
+                            <div class="address">600 40th Ave, San Francisco, United States</div>
+                        </div>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/luxury-mansion/index.html"
+                                                                     class="propWidget-2">
+                        <div class="fig">
+                            <div class="featured-label">
+                                <div class="featured-label-left"></div>
+                                <div class="featured-label-content"><span class="fa fa-star"></div>
+                                <div class="featured-label-right"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
+                                 class="scale" data-scale="best-fill" data-align="center"><img
+                                    src="wp-content/uploads/2014/12/bg-5-1024x576-600x400.jpg" alt="Luxury Mansion"
+                                    class="blur scale" data-scale="best-fill" data-align="center">
+                            <div class="opac"></div>
+                            <div class="priceCap osLight"><span>$3,400<small
+                                            style="font-size:14px;">/mo</small></span></div>
+                            <div class="figType">For Rent</div>
+                            <h3 class="osLight">Luxury Mansion</h3>
+                            <div class="address">10 Romain St, San Francisco, Romania</div>
+                        </div>
+                    </a></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="properties/elegant-apartment/index.html"
+                                                                     class="propWidget-2">
+                        <div class="fig">
+                            <div class="featured-label">
+                                <div class="featured-label-left"></div>
+                                <div class="featured-label-content"><span class="fa fa-star"></div>
+                                <div class="featured-label-right"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="wp-content/uploads/2014/12/bg-4-600x400.jpg" alt="Elegant Apartment"
+                                 class="scale" data-scale="best-fill" data-align="center"><img
+                                    src="wp-content/uploads/2014/12/bg-4-600x400.jpg" alt="Elegant Apartment"
+                                    class="blur scale" data-scale="best-fill" data-align="center">
+                            <div class="opac"></div>
+                            <div class="priceCap osLight"><span>$895,000<small
+                                            style="font-size:14px;"></small></span></div>
+                            <div class="figType">For Sale</div>
+                            <h3 class="osLight">Elegant Apartment</h3>
+                            <div class="address">1485 Guerrero St, San Francisco, United States</div>
+                        </div>
+                    </a></div>
+            </div>
+            <h2 class="centered osLight">Hot Offer Today</h2>
+            <div class="pb40">
+                <div class="singlePropertyShort">
+                    <div class="spsImage right"><img src="wp-content/uploads/2014/12/bg-4.jpg"
+                                                     alt="Elegant Apartment" class="scale" data-scale="best-fill"
+                                                     data-align="center">
+                        <div class="spsPrice">
+                            <div class="osLight"><span>$895,000<small style="font-size:14px;"></small></span></div>
+                        </div>
+                        <div class="spsType">For Sale</div>
+                    </div>
+                    <div class="spsContent right">
+                        <div class="spsCategory">Apartment</div>
+                        <h3 class="osLight spsTitle">Elegant Apartment</h3>
+                        <div class="spsAddress">1485 Guerrero St, Noe Valley, San Francisco, <br/>CA, 94110, United
+                            States
+                        </div>
+                        <a href="properties/elegant-apartment/index.html" class="btn btn-green btn-o">View
+                            Details</a>
+                        <ul class="spsFeatures">
+                            <li><span class="fa fa-moon-o"></span> 2 Bedrooms</li>
+                            <li><span class="icon-drop"></span> 1 Bathrooms</li>
+                            <li><span class="icon-frame"></span> 1200 sq ft</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <h2 class="centered osLight">Membership Plans</h2>
+            <div class="row pb20">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="price-plan">
+                        <div class="price-plan-title">Personal</div>
+                        <div class="price-plan-price">
+                            <div class="price-plan-price-sum">9.99<sup> USD</sup></div>
+                            <div class="price-plan-price-period">/ 1 months</div>
+                        </div>
+                        <div class="price-plan-features"><span>10 Listings</span><span>2 Featured Listings</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="price-plan">
+                        <div class="price-plan-title">Professional</div>
+                        <div class="price-plan-price">
+                            <div class="price-plan-price-sum">49.99<sup> USD</sup></div>
+                            <div class="price-plan-price-period">/ 6 months</div>
+                        </div>
+                        <div class="price-plan-features"><span>40 Listings</span><span>10 Featured Listings</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="price-plan">
+                        <div class="price-plan-title">Business</div>
+                        <div class="price-plan-price">
+                            <div class="price-plan-price-sum">99.99<sup> USD</sup></div>
+                            <div class="price-plan-price-period">/ 1 years</div>
+                        </div>
+                        <div class="price-plan-features">
+                            <span>Unlimited Listings</span><span>20 Featured Listings</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb40">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <a href="#" data-toggle="modal" data-target="#signup"
+                       class="btn btn-green btn-block btn-lg">Get
+                        started now</a></div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+            </div>
+            <h2 class="centered osLight">Our Agents</h2>
+            <div class="row pb40">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="agent"><a href="agents/antony-iglesias/index.html" class="agent-avatar"><img
+                                    src="wp-content/uploads/2014/12/avatar-4.png" alt="Antony Iglesias">
+                            <div class="ring"></div>
+                        </a>
+                        <div class="agent-name osLight">Antony Iglesias</div>
+                        <div class="reviewRating"><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star-o"></span></div>
+                        <div class="agent-contact"><a href="agents/antony-iglesias/index.html"
+                                                      class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
+                                        class="fa fa-link"></span></a> <a href="#"
+                                                                          class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
+                                                                          target="_blank"><span
+                                        class="fa fa-facebook"></span></a> <a href="#"
+                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
+                                                                              target="_blank"><span
+                                        class="fa fa-twitter"></span></a> <a href="#"
+                                                                             class="btn btn-sm btn-icon btn-round btn-o btn-google"
+                                                                             target="_blank"><span
+                                        class="fa fa-google-plus"></span></a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="agent"><a href="agents/rust-cohle/index.html" class="agent-avatar"><img
+                                    src="wp-content/uploads/2014/12/avatar-6.png" alt="Rust Cohle">
+                            <div class="ring"></div>
+                        </a>
+                        <div class="agent-name osLight">Rust Cohle</div>
+                        <div class="reviewRating"><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star-o"></span></div>
+                        <div class="agent-contact"><a href="agents/rust-cohle/index.html"
+                                                      class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
+                                        class="fa fa-link"></span></a> <a href="#"
+                                                                          class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
+                                                                          target="_blank"><span
+                                        class="fa fa-facebook"></span></a> <a href="#"
+                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
+                                                                              target="_blank"><span
+                                        class="fa fa-twitter"></span></a> <a href="#"
+                                                                             class="btn btn-sm btn-icon btn-round btn-o btn-google"
+                                                                             target="_blank"><span
+                                        class="fa fa-google-plus"></span></a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="agent"><a href="agents/jane-smith/index.html" class="agent-avatar"><img
+                                    src="wp-content/uploads/2014/12/avatar-2.png" alt="Jane Smith">
+                            <div class="ring"></div>
+                        </a>
+                        <div class="agent-name osLight">Jane Smith</div>
+                        <div class="reviewRating"><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star-o"></span></div>
+                        <div class="agent-contact"><a href="agents/jane-smith/index.html"
+                                                      class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
+                                        class="fa fa-link"></span></a> <a href="#"
+                                                                          class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
+                                                                          target="_blank"><span
+                                        class="fa fa-facebook"></span></a> <a href="#"
+                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
+                                                                              target="_blank"><span
+                                        class="fa fa-twitter"></span></a> <a href="#"
+                                                                             class="btn btn-sm btn-icon btn-round btn-o btn-google"
+                                                                             target="_blank"><span
+                                        class="fa fa-google-plus"></span></a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="agent"><a href="agents/john-smith/index.html" class="agent-avatar"><img
+                                    src="wp-content/uploads/2014/12/avatar-1.png" alt="John Smith">
+                            <div class="ring"></div>
+                        </a>
+                        <div class="agent-name osLight">John Smith</div>
+                        <div class="reviewRating"><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                    class="fa fa-star"></span><span class="fa fa-star"></span></div>
+                        <div class="agent-contact"><a href="agents/john-smith/index.html"
+                                                      class="btn btn-sm btn-icon btn-round btn-o btn-green"><span
+                                        class="fa fa-link"></span></a> <a href="#"
+                                                                          class="btn btn-sm btn-icon btn-round btn-o btn-facebook"
+                                                                          target="_blank"><span
+                                        class="fa fa-facebook"></span></a> <a href="#"
+                                                                              class="btn btn-sm btn-icon btn-round btn-o btn-twitter"
+                                                                              target="_blank"><span
+                                        class="fa fa-twitter"></span></a> <a href="#"
+                                                                             class="btn btn-sm btn-icon btn-round btn-o btn-google"
+                                                                             target="_blank"><span
+                                        class="fa fa-google-plus"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="centered osLight">Testimonials</h2>
+            <div class="row pb40">
+                <div id="home-testimonials" class="carousel slide carousel-wb mb20" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#home-testimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#home-testimonials" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="wp-content/uploads/2014/12/avatar-2.png"
+                                                      class="home-testim-avatar" alt="Jane Smith">
+                            <div class="home-testim">
+                                <div class="home-testim-text">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour, or randomised words
+                                </div>
+                                <div class="home-testim-name">Jane Smith</div>
+                            </div>
+                        </div>
+                        <div class="item"><img src="wp-content/uploads/2014/12/avatar-6.png"
+                                               class="home-testim-avatar" alt="Rust Cohle">
+                            <div class="home-testim">
+                                <div class="home-testim-text">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour, or randomised words
+                                </div>
+                                <div class="home-testim-name">Rust Cohle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
-
     </div>
+
+</div>
 </div>
 
 
@@ -1846,45 +1913,31 @@
     </div>
 </div>
 
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<![endif]-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type='text/javascript' src='lib/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='lib/wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript'
+        src='http://api-idx.diversesolutions.com/combo-js?config=dsidxpress&amp;ver=2.1.32'></script>
+<script type='text/javascript' src='lib/wp-includes/js/plupload/plupload.full.mincc91.js?ver=2.1.8'></script>
+<script type='text/javascript' src='lib/wp-includes/js/plupload/handlers.min3172.js?ver=4.5.10'></script>
+
 <script type='text/javascript' src='lib/wp-content/plugins/short-tax-post/js/jquery-ui.min5152.js?ver=1.0'></script>
 <script type='text/javascript'
         src='https://maps.googleapis.com/maps/api/js?libraries=geometry&amp;libraries=places&amp;ver=1.0'></script>
-<script type='text/javascript' src='lib/wp-content/plugins/short-tax-post/js/bootstrap-datepicker5152.js?ver=1.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var property_vars = {
-        "admin_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/",
-        "theme_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-content\/themes\/reales",
-        "plugins_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-content\/plugins\/short-tax-post\/\/images\/",
-        "browse_text": "Browse...",
-        "delete_photo": "Delete",
-        "gallery_title": "Property photo gallery",
-        "gallery_btn": "Insert Photos",
-        "floorplans_title": "Property floor plans",
-        "floorplans_btn": "Insert Plans"
-    };
-    /* ]]> */
-</script>
+<script type='text/javascript'
+        src='lib/wp-content/plugins/short-tax-post/js/bootstrap-datepicker5152.js?ver=1.0'></script>
 <script type='text/javascript' src='lib/wp-content/plugins/short-tax-post/js/property5152.js?ver=1.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var agent_vars = {
-        "admin_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/",
-        "theme_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-content\/themes\/reales",
-        "browse_text": "Browse..."
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-content/plugins/short-tax-post/js/agent5152.js?ver=1.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var testimonials_vars = {
-        "admin_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/",
-        "theme_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-content\/themes\/reales",
-        "browse_text": "Browse..."
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-content/plugins/short-tax-post/js/testimonials5152.js?ver=1.0'></script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/jquery.placeholder5152.js?ver=1.0'></script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/bootstrap5152.js?ver=1.0'></script>
@@ -1898,164 +1951,9 @@
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/fileinput.min5152.js?ver=1.0'></script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/image-scale.min5152.js?ver=1.0'></script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/jquery.fancyboxd63f.js?ver=2.1.5'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var services_vars = {
-        "admin_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/",
-        "ajaxurl": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/admin-ajax.php",
-        "signin_redirect": "http:\/\/mariusn.com\/themes\/reales-wp",
-        "theme_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-content\/themes\/reales",
-        "signup_loading": "Sending...",
-        "signup_text": "Sign Up",
-        "signin_loading": "Sending...",
-        "signin_text": "Sign In",
-        "forgot_loading": "Sending...",
-        "forgot_text": "Get New Password",
-        "reset_pass_loading": "Sending...",
-        "reset_pass_text": "Reset Password",
-        "fb_login_loading": "Sending...",
-        "fb_login_text": "Sign In with Facebook",
-        "fb_login_error": "Login cancelled or not fully authorized!",
-        "google_signin_loading": "Sending...",
-        "google_signin_text": "Sign In with Google",
-        "google_signin_error": "Signin cancelled or not fully authorized!",
-        "search_id": "",
-        "search_keywords": "",
-        "search_country": "",
-        "search_state": "",
-        "search_city": "",
-        "search_category": "0",
-        "search_type": "0",
-        "search_min_price": "",
-        "search_max_price": "",
-        "search_lat": "37.77024821511303",
-        "search_lng": "-122.44061568005372",
-        "search_bedrooms": "",
-        "search_bathrooms": "",
-        "search_neighborhood": "",
-        "search_min_area": "",
-        "search_max_area": "",
-        "featured": "",
-        "search_unit": "sq ft",
-        "search_amenities": [],
-        "search_custom_fields": [],
-        "sort": "newest",
-        "default_lat": "37.77024821511303",
-        "default_lng": "-122.44061568005372",
-        "zoom": "13",
-        "infobox_close_btn": "Close",
-        "infobox_view_btn": "View",
-        "page": "0",
-        "post_id": "2",
-        "user_id": "0",
-        "update_property": "Update Property",
-        "marker_color": "#0eaaa6",
-        "saving_property": "Saving Property...",
-        "deleting_property": "Deleting Property...",
-        "please_wait": "Please wait...",
-        "featuring_property": "Setting Property as Featured...",
-        "home_redirect": "http:\/\/mariusn.com\/themes\/reales-wp",
-        "list_redirect": "http:\/\/mariusn.com\/themes\/reales-wp\/my-properties\/",
-        "send_message": "Send Message",
-        "sending_message": "Sending Message...",
-        "submit": "Submit",
-        "sending_report": "Sending Report...",
-        "save": "Save",
-        "saving": "Saving...",
-        "updating_profile": "Updating Profile...",
-        "use_captcha": "",
-        "use_submit_captcha": "",
-        "gmaps_style": "%5B%7B%22featureType%22%3A%22water%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23d3d3d3%22%7D%5D%7D%2C%7B%22featureType%22%3A%22transit%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23808080%22%7D%2C%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road.highway%22%2C%22elementType%22%3A%22geometry.stroke%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22on%22%7D%2C%7B%22color%22%3A%22%23b3b3b3%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road.highway%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23ffffff%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road.local%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22on%22%7D%2C%7B%22color%22%3A%22%23ffffff%22%7D%2C%7B%22weight%22%3A1.8%7D%5D%7D%2C%7B%22featureType%22%3A%22road.local%22%2C%22elementType%22%3A%22geometry.stroke%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23d7d7d7%22%7D%5D%7D%2C%7B%22featureType%22%3A%22poi%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22on%22%7D%2C%7B%22color%22%3A%22%23ebebeb%22%7D%5D%7D%2C%7B%22featureType%22%3A%22administrative%22%2C%22elementType%22%3A%22geometry%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23a7a7a7%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road.arterial%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23ffffff%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road.arterial%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23ffffff%22%7D%5D%7D%2C%7B%22featureType%22%3A%22landscape%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22on%22%7D%2C%7B%22color%22%3A%22%23efefef%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road%22%2C%22elementType%22%3A%22labels.text.fill%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23696969%22%7D%5D%7D%2C%7B%22featureType%22%3A%22administrative%22%2C%22elementType%22%3A%22labels.text.fill%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22on%22%7D%2C%7B%22color%22%3A%22%23737373%22%7D%5D%7D%2C%7B%22featureType%22%3A%22poi%22%2C%22elementType%22%3A%22labels.icon%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%22featureType%22%3A%22poi%22%2C%22elementType%22%3A%22labels%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road.arterial%22%2C%22elementType%22%3A%22geometry.stroke%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23d6d6d6%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road%22%2C%22elementType%22%3A%22labels.icon%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%7D%2C%7B%22featureType%22%3A%22poi%22%2C%22elementType%22%3A%22geometry.fill%22%2C%22stylers%22%3A%5B%7B%22color%22%3A%22%23dadada%22%7D%5D%7D%5D",
-        "loading_searches": "Loading Searches List...",
-        "no_searches": "Searches list empty.",
-        "transportations_title": "Click to view the transportation stations",
-        "supermarkets_title": "Click to view the supermarkets",
-        "schools_title": "Click to view the schools",
-        "libraries_title": "Click to view the libraries",
-        "pharmacies_title": "Click to view the pharmacies",
-        "hospitals_title": "Click to view the hospitals",
-        "account_redirect": "http:\/\/mariusn.com\/themes\/reales-wp\/account-settings\/",
-        "user_logged_in": "0",
-        "user_is_agent": "0"
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/services5152.js?ver=1.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var main_vars = {
-        "no_city": "Please set location",
-        "max_price": "2500000",
-        "max_area": "5000",
-        "currency": "$",
-        "currency_pos": "before",
-        "unit": "sq ft",
-        "search_placeholder": "Search for...",
-        "top_admin_menu": "",
-        "idx_search_location": "Location",
-        "idx_search_category": "Category",
-        "idx_search_price_min": "Min price",
-        "idx_search_price_max": "Max price",
-        "idx_search_beds": "Bedrooms",
-        "idx_search_baths": "Bathrooms",
-        "idx_advanced_search": "Advanced Search",
-        "idx_advanced_filter": "Show advanced search options",
-        "idx_advanced_filter_hide": "Hide advanced search options"
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/main5152.js?ver=1.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var ajax_vars = {
-        "ajaxurl": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/admin-ajax.php",
-        "nonce": "23bedae9d1",
-        "remove": "dd6905f5f4",
-        "number": "1",
-        "upload_enabled": "1",
-        "confirmMsg": "Are you sure you want to delete this?",
-        "plupload": {
-            "runtimes": "html5,flash,html4",
-            "browse_button": "aaiu-uploader",
-            "container": "aaiu-upload-container",
-            "file_data_name": "aaiu_upload_file",
-            "max_file_size": "100000000b",
-            "max_files": "10",
-            "url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/admin-ajax.php?action=reales_upload&nonce=8a001876bf",
-            "flash_swf_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-includes\/js\/plupload\/plupload.flash.swf",
-            "filters": [{"title": "Allowed Files", "extensions": "jpg,jpeg,gif,png"}],
-            "multipart": true,
-            "urlstream_upload": true
-        }
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/ajax-upload5152.js?ver=1.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var ajax_vars = {
-        "ajaxurl": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/admin-ajax.php",
-        "nonce": "1860b0110c",
-        "remove": "66d910846a",
-        "number": "1",
-        "upload_enabled": "1",
-        "confirmMsg": "Are you sure you want to delete this?",
-        "plupload": {
-            "runtimes": "html5,flash,html4",
-            "browse_button": "aaiu-uploader-plans",
-            "container": "aaiu-upload-container-plans",
-            "file_data_name": "aaiu_upload_file_plans",
-            "max_file_size": "100000000b",
-            "max_files": "10",
-            "url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-admin\/admin-ajax.php?action=reales_upload_plans&nonce=8a001876bf",
-            "flash_swf_url": "http:\/\/mariusn.com\/themes\/reales-wp\/wp-includes\/js\/plupload\/plupload.flash.swf",
-            "filters": [{"title": "Allowed Files", "extensions": "jpg,jpeg,gif,png"}],
-            "multipart": true,
-            "urlstream_upload": true
-        }
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-content/themes/reales/js/plans-ajax-upload5152.js?ver=1.0'></script>
 <script type='text/javascript' src='lib/wp-includes/js/wp-embed.min3172.js?ver=4.5.10'></script>
 <script type='text/javascript' src='lib/wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
@@ -2063,19 +1961,9 @@
 <script type='text/javascript' src='lib/wp-includes/js/jquery/ui/position.mine899.js?ver=1.11.4'></script>
 <script type='text/javascript' src='lib/wp-includes/js/jquery/ui/menu.mine899.js?ver=1.11.4'></script>
 <script type='text/javascript' src='lib/wp-includes/js/wp-a11y.min3172.js?ver=4.5.10'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var uiAutocompleteL10n = {
-        "noResults": "No search results.",
-        "oneResult": "1 result found. Use up and down arrow keys to navigate.",
-        "manyResults": "%d results found. Use up and down arrow keys to navigate."
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript' src='lib/wp-includes/js/jquery/ui/autocomplete.mine899.js?ver=1.11.4'></script>
 <script type='text/javascript' src='lib/wp-content/plugins/dsidxpress/js/autocomplete3f87.js?ver=2.1.32'></script>
 <script type='text/javascript' src='scripts/app.js'></script>
 </body>
 
-<!-- Mirrored from mariusn.com/themes/reales-wp/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Oct 2017 13:29:27 GMT -->
 </html>
