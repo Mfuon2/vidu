@@ -1,0 +1,204 @@
+*:focus {
+    outline: none;
+}
+*::-moz-focus-inner {
+    border: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+.reales-wrapper {
+    margin: 20px 20px 0 0;
+    display: table;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+}
+.reales-leftSide {
+    display: table-cell;
+    width: 20%;
+    background-color: #213837;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.reales-content {
+    display: table-cell;
+    padding: 0 20px 20px 20px;
+    width: 80%;
+    vertical-align: top;
+}
+.reales-content h3 {
+    margin: 1.5em 0;
+}
+.reales-logo {
+    background-color: #0eaaa6;
+    color: #fff;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.reales-logo span {
+    font-size: 28px;
+    line-height: 28px;
+}
+ul.reales-tabs {
+    margin: 0;
+    padding: 0;
+}
+ul.reales-tabs li {
+    margin: 0;
+    padding: 0;
+}
+ul.reales-tabs li a {
+    display: block;
+    padding: 14px 20px;
+    color: #adc8c7;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    outline: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul.reales-tabs li a:focus {
+    outline: none;
+}
+ul.reales-tabs li a:hover, ul.reales-tabs li.reales-tab-active a {
+    background-color: #067670;
+    color: #fff;
+}
+ul.reales-tabs li a span.reales-tab-icon {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+}
+ul.reales-tabs li a span.reales-tab-link {
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+    left: 0;
+}
+.propDesc, .agentAbout {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+.formInput {
+    width: 100%;
+}
+.adminField {
+    padding: 5px 10px 5px 0;
+}
+.adminField.text {
+    line-height: 28px;
+    font-weight: bold;
+}
+.adminField.text > span {
+    font-weight: normal;
+}
+.pac-container {
+    background-color: #fff;
+    position: absolute !important;
+    z-index: 1000;
+    border-radius: 2px;
+    border-top: 1px solid #dfdfdf;
+    border: 1px solid #dfdfdf;
+    font-family: "Open Sans",sans-serif;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 13px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+}
+.pac-item {
+    cursor: pointer;
+    padding: 10px 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1.42857143;
+    text-align: left;
+    border-top: 0 none;
+    font-size: 13px;
+    color: #333;
+    font-weight: normal;
+}
+.no-touch .pac-item:hover {
+    color: #333;
+    text-decoration: none;
+    background-color: #f3f3f3;
+}
+.pac-icon {
+    display: none;
+}
+.pac-item-query {
+    color: #333;
+}
+/*.pac-container:after{
+    content:"";
+    padding:1px 1px 1px 0;
+    height:16px;
+    text-align:right;
+    display:block;
+    background: url(https://developers.google.com/maps/documentation/places/images/powered-by-google-on-white.png) no-repeat center right;
+}*/
+#propMapView {
+    width: 100%;
+    height: 400px;
+}
+#propGalleryList, #propPlansList {
+    margin-bottom: 10px;
+}
+#propGalleryList tr td img, #propPlansList tr td img {
+    width: 100px;
+}
+#propGalleryList tr td, #propPlansList tr td {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.help {
+    font-size: 13px !important;
+}
+#adminmenu div.wp-menu-name {
+    padding: 8px;
+}
+.list-group .list-group-item {
+    border: 1px solid #dfdfdf;
+    position: relative;
+    padding: 10px;
+    background: #fafafa;
+    cursor: move;
+}
+.list-group .list-group-item:hover {
+    border: 1px solid #999;
+}
+.list-group .sortable-placeholder {
+    border: 1px dashed #bfbfbf;
+    height: 84px;
+    margin-bottom: 5px;
+}
+.list-group .list-group-item img {
+    width: 100px;
+    height: auto;
+}
+.list-group .list-group-item a {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    right: 10px;
+}
