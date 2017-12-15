@@ -1237,7 +1237,7 @@
 
         <div id="newProperty" class="post-2 page type-page status-publish hentry">
             <div class="entry-content">
-                <h2 class="osLight centered">Property Upload</h2>
+                <h2 class="osLight centered">New Property</h2>
 
                 <div class="row pb40">
 
@@ -1246,107 +1246,121 @@
 
                         <?php
                         if (isset($_POST['submit'])) {
-                            if (count($_FILES['upload']['name']) > 0) {
-                                //Loop through each file
-                                for ($i = 0; $i < count($_FILES['upload']['name']); $i++) {
-                                    //Get the temp file path
-                                    $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
+                            if (count($_FILES['upload']['name']) > 7)
+                            {
+                                echo '<div class="alert alert-danger"><strong>Warning!</strong>Select Less Than 8 Images</div>';
+                            }else{
+                                if (count($_FILES['upload']['name']) > 0) {
+                                    //Loop through each file
+                                    for ($i = 0; $i < count($_FILES['upload']['name']); $i++) {
+                                        //Get the temp file path
+                                        $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
 
-                                    //Make sure we have a filepath
-                                    if ($tmpFilePath != "") {
+                                        //Make sure we have a filepath
+                                        if ($tmpFilePath != "") {
 
-                                        //save the filename
-                                        $property = "YEYEYE";
-                                        $shortname = $_FILES['upload']['name'][$i];
+                                            //save the filename
+                                            $property = "temp";
+                                            $shortname = $_FILES['upload']['name'][$i];
 
-                                        if (!file_exists("uploaded/" . $property)) {
-                                            mkdir("uploaded/" . $property, 0775, true);
-                                        }
-
-                                        //save the url and the file
-                                        $filePath = "uploaded/" . $property . "/" . $_FILES['upload']['name'][$i];
-                                        $path = "uploaded/" . $property . "/";
-//
-                                        //Upload the file into the temp dir
-                                        try {
-                                            if (move_uploaded_file($tmpFilePath, $filePath)) {
-
-                                                $files[] = $shortname;
-                                                //insert into db
-                                                //use $shortname for the filename
-                                                //use $filePath for the relative url to the file
+                                            if (!file_exists("uploaded/" . $property)) {
+                                                mkdir("uploaded/" . $property, 0775, true);
                                             }
-                                        } catch (Exception $e) {
-                                            echo " ==== " . $e;
-                                        }
 
+                                            //save the url and the file
+                                            $filePath = "uploaded/" . $property . "/" . $_FILES['upload']['name'][$i];
+                                            $path = "uploaded/" . $property . "/";
+//
+                                            //Upload the file into the temp dir
+                                            try {
+                                                if (move_uploaded_file($tmpFilePath, $filePath)) {
+
+                                                    $files[] = $shortname;
+                                                    //insert into db
+                                                    //use $shortname for the filename
+                                                    //use $filePath for the relative url to the file
+                                                }
+                                            } catch (Exception $e) {
+                                                echo " ==== " . $e;
+                                            }
+
+                                        }
                                     }
+                                } else {
+                                    echo '<div class="text-danger" style=\"\">No file Selected</div>';
                                 }
                             }
+
 
 //show success message
-                            if (is_array($files)) {
+                            try {
+                                if (isset($files)) {
+                                    if (is_array($files)) {
 
-                                $i = 0;
-                                echo '<div class="img-thumbnail" style=\"  width: 12%; height: 120px\">';
-                                foreach ($files as $file) {
-                                    $getPath = null;
-                                    if($i < count($_FILES['upload']['name'])){
-                                        $getPath = $path . $_FILES['upload']['name'][$i];
+                                        $i = 0;
+                                        echo '<div class="img-thumbnail well well-sm" style=\"  width: 12%; height: 120px\">';
+                                        foreach ($files as $file) {
+                                            $getPath = null;
+                                            if ($i < count($_FILES['upload']['name'])) {
+                                                $getPath = $path . $_FILES['upload']['name'][$i];
 
-                                        echo '<img src="' . $getPath . '" class="img-thumbnail" alt="Cinque Terre" style="margin-left: 5px;margin-right: 5px;margin-top: 7px; width: 12%; height: 120px">';
+                                                echo '<img src="' . $getPath . '" class="img-thumbnail" alt="Cinque Terre" style="margin-left: 5px;margin-right: 5px;margin-top: 7px; width: 12%; height: 120px">';
+
+                                            }
+                                            $i++;
+
+
+                                        }
+                                        echo '</div>';
 
                                     }
-                                    $i++;
-
-
+                                } else {
+                                    echo '<div class="alert alert-danger"><strong>Warning!</strong>No File Selected</div>';
                                 }
-                                echo '</div>';
 
+                            } catch (Exception $exception) {
+                                echo '<div class="text-danger" style=\"\">No file Selected</div>' . $exception;
                             }
+
                         }
                         ?>
 
                         <form action="" enctype="multipart/form-data" method="post">
 
-                            <div>
-                                <input id='upload' name="upload[]" type="file" multiple="multiple"/>
+                            <div class="form-group">
+                                <input id='upload'  name="upload[]" type="file" multiple="multiple"/>
                             </div>
 
-                            <p><input class="btn-file" type="submit" name="submit" value="Upload"></p>
+
+                            <div class="form-group">
+                                    <button class="btn btn-primary" type="submit" name="submit">Upload Pictures</button>
+
+                            </div>
 
                         </form>
-                        <form class="form-horizontal" action="/action_page.php">
+                        <form class="form-horizontal" action="app/property/new.php">
 
                             <div class="col-sm-6">
 
-
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2">Name :</label>
+                                    <label class="control-label col-sm-2">Name</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" id="propertyName"
                                                placeholder="Property Name" name="propertyName">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <label class="control-label col-sm-2">Manager</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
-                                               name="email">
+                                        <input type="text" class="form-control" id="manager" placeholder="Manager"
+                                               name="manager">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <label class="control-label col-sm-2">Locality</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
-                                               name="email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2" for="email">Email:</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
-                                               name="email">
+                                        <input type="text" class="form-control" id="propertyLocality" placeholder="Location"
+                                               name="propertyLocality">
                                     </div>
                                 </div>
 
@@ -1354,19 +1368,36 @@
                             <div class="col-sm-6">
 
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                    <label class="control-label col-sm-2">Other Details</label>
                                     <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="pwd"
-                                               placeholder="Enter password" name="pwd">
-                                    </div>
-                                </div>
-                                n
-                                <div class="form-group">
-                                    <div class="col-sm-offset-6 col-sm-10">
-                                        <button type="submit" class="btn btn-default">Submit</button>
+                                        <input type="text" class="form-control" id="details"
+                                               placeholder="Other Details" name="details">
                                     </div>
                                 </div>
 
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Unit Type</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control dropdown-select" id="unitType" name="unitType">
+                                            <option>3 Bedrooms</option>
+                                            <option>4 Bedrooms</option>
+                                            <option>5 Bedrooms</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Number of Units</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="numberOfUnits" placeholder="Number Of Units"
+                                               name="numberOfUnits">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Create Property</button>
+                                </div>
                             </div>
                         </form>
                     </div>
