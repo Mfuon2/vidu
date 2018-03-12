@@ -1245,6 +1245,7 @@
                         <h2>Property Details</h2>
 
                         <?php
+                        echo "I AM HERE ";
                         if (isset($_POST['submit'])) {
                             if (count($_FILES['upload']['name']) > 7)
                             {
