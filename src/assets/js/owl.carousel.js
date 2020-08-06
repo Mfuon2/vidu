@@ -15,7 +15,7 @@
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates a carousel.
@@ -1703,7 +1703,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates the auto refresh plugin.
@@ -1815,7 +1815,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates the lazy plugin.
@@ -1951,7 +1951,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates the auto height plugin.
@@ -2049,7 +2049,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates the video plugin.
@@ -2369,7 +2369,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates the animate plugin.
@@ -2492,7 +2492,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	/**
 	 * Creates the autoplay plugin.
@@ -2691,7 +2691,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 	'use strict';
 
 	/**
@@ -3074,7 +3074,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 	'use strict';
 
 	/**
@@ -3199,7 +3199,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 
 	var style = $('<support>').get(0).style,
 		prefixes = 'Webkit Moz O ms'.split(' '),

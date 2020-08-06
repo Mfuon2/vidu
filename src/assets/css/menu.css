@@ -26,7 +26,7 @@ img {
 #header {
     position: relative;
     z-index: 999;
-    padding: 22px 0 80px 0;
+    padding: 22px 0 80px;
 }
 /* Header Widget */
 .header-widget {
@@ -255,7 +255,7 @@ a.button.border, a.button {
         margin-top: 5px;
     }
     .header-style-2 .header-widget a.button.border {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     #header-container.header-style-2 .header-widget {
         zoom: 0.7;
@@ -268,7 +268,7 @@ a.button.border, a.button {
 #navigation.style-2.cloned,
 #header.cloned {
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
     z-index: 999;
 }
@@ -286,7 +286,7 @@ a.button.border, a.button {
     margin-top: 1px;
 }
 #header.cloned {
-    padding: 18px 0 20px 0;
+    padding: 18px 0 20px;
 }
 .sticky-logo {
     display: none;
@@ -334,7 +334,7 @@ a.button.border, a.button {
 }
 @media (max-width: 991px) {
     #navigation {
-        margin-left: 0px !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -384,7 +384,7 @@ a.button.border, a.button {
     margin: 0 0 0 10px;
 }
 #navigation ul ul {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
 }
 #navigation ul ul ul:after {
     content: "";
@@ -435,7 +435,7 @@ a.button.border, a.button {
 ------------------------------------- */
 #navigation ul ul {
     background-color: #fff;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
     border-radius: 3px;
 }
 #navigation ul ul li {
@@ -636,7 +636,7 @@ a.button.border, a.button {
     right: 0;
     list-style: none;
     background-color: #fff;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     display: inline-block;
     width: 190px;
@@ -1259,7 +1259,7 @@ em.mm-counter+a.mm-fullsubopen+span {
     width: 50px;
     display: none;
     position: relative;
-    margin: 0 0 23px 0;
+    margin: 0 0 23px;
     background-color: #eee;
     border-radius: 4px;
     cursor: pointer;
@@ -1504,7 +1504,7 @@ transform: rotate(-90deg);
     }
     #header-container.header-style-2 .header-widget li i {
         width: 50px;
-        margin: 0 0 0 0px;
+        margin: 0;
         display: inline-block;
         text-align: left;
         top: 3px;

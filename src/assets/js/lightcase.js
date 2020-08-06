@@ -8,7 +8,7 @@
  * @version		2.4.0 (09/04/2017)
  */
 
-;(function ($) {
+(function ($) {
 
 	'use strict';
 

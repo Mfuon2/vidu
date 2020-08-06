@@ -41,7 +41,7 @@
           preloader: false,
           fixedContentPos: false
         });
-    };
+    }
 
     $('#myTab a').on('click', function (e) {
         e.preventDefault()
